@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+# Εργασίες 2020-2021
 
-You can use the [editor on GitHub](https://github.com/MelinaPapadimitriou/Algorithms_and_Complexity/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## 1. Χρωματισμός γράφου (αλγόριθμοι και πολυπλοκότητα - προπτυχιακό)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Περίληψη εργασίας
 
-### Markdown
+Το πρόβλημα του χρωματισμού γραφήματος είναι ένα NP‐hard πρόβλημα συνδυαστικής βελτιστοποίησης. Αφορά την ανάθεση ενός χρώματος σε κάθε κορυφή ενός γραφήματος έτσι ώστε γειτονικές κορυφές να χρωματίζονται με διαφορετικό χρώμα (όπως στο ακόλουθο σχήμα), ενώ παράλληλα χρησιμοποιείται ο ελάχιστος αριθμός διαφορετικών χρωμάτων. Στην παρούσα εργασία ζητείται η υλοποίηση τεσσάρων αλγορίθμων χρωματισμού γραφημάτων και η εφαρμογή τους σε γνωστά προβλήματα από τη βιβλιογραφία.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![](https://iq.opengenus.org/content/images/2018/07/gc2.PNG)
 
-```markdown
-Syntax highlighted code block
+* Χρωματισμός γράφου [wikipedia](https://en.wikipedia.org/wiki/Graph_coloring).
+* [Graph Coloring Greedy Algorithm [O(V^2 + E) time complexity]](https://iq.opengenus.org/graph-colouring-greedy-algorithm/)
 
-# Header 1
-## Header 2
-### Header 3
+---
 
-- Bulleted
-- List
+## 2. Χρονοπρογραμματισμός εξετάσεων Πανεπιστημίου (Αλγόριθμοι και προχωρημένες δομές δεδομένων - μεταπτυχιακό)
 
-1. Numbered
-2. List
+### Περίληψη εργασίας -
 
-**Bold** and _Italic_ and `Code` text
+Η αποδοτική δημιουργία προγραμμάτων εξετάσεων είναι ένα σημαντικό και επαναλαμβανόμενο πρόβλημα το οποίο καλούνται να αντιμετωπίσουν τα εκπαιδευτικά ιδρύματα σε όλο τον κόσμο. Μια απλοποιημένη μορφή του προβλήματος έχει προταθεί το 1996 από τους Carter κ.ά. οι οποίοι διέθεσαν δημόσια 13 στιγμιότυπα προβλημάτων που εν συνεχεία χρησιμοποιήθηκαν σε πληθώρα επιστημονικών εργασιών χρονοπρογραμματισμού. Στα πλαίσια της παρούσας εργασίας ζητείται να κατασκευάσετε μια εφαρμογή που θα είναι σε θέση να παράγει λύσεις για τα προβλήματα αυτά.
 
-[Link](url) and ![Image](src)
-```
+* [Benchmark Data Sets in Exam Timetabling](http://www.asap.cs.nott.ac.uk/external/resources/)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+---
 
-### Jekyll Themes
+## 3. Αποσπάσματα κώδικα
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MelinaPapadimitriou/Algorithms_and_Complexity/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+* [read_data.cpp](/app/src/read_data.cpp): ανάγνωση δεδομένων [car-s-92.stu](./app/datasets/car-f-92.stu), καταγραφή φοιτητών ανά εξέταση.
+* [set_ops.cpp](/app/src/set_ops.cpp): εύρεση τομής ενός std::set<int> με ένα άλλο std::set<int>.
+* [random_numbers.cpp](./app/src/random_numbers.cpp), [random_numbers2.cpp](./app/src/random_numbers2.cpp): παραγωγή ψεύδο-τυχαίων ακέραιων τιμών στο διάστημα [1,V].
+* [greedy_coloring.cpp](./app/src/greedy_coloring.cpp): απεικόνιση γράφου ως λίστα γειτνίασης και greedy χρωματισμός του γράφου.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## 4. Ένα Project σε Eclipse 
+
+Εγκατάσταση των λογισμικών:
+
+* [tdm-gcc](https://jmeubank.github.io/tdm-gcc/)
+* [Eclipse Installer](https://www.eclipse.org/downloads/packages/)
+
+
+[Το project σε eclipse (περιέχει το αρχείο read_data.cpp)](https://github.com/chgogos/alco/tree/main/sample_eclipse_project)
+
+
+![](/img/20201102_aads.svg)
+
